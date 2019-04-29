@@ -2,10 +2,12 @@
   "name": "contactmanager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://suprfinelime.github.io/contactmanager",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -13,6 +15,7 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
